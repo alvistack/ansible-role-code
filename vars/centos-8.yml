@@ -40,4 +40,3 @@ _yum_repository:
 _yum:
   - { state: "latest", name: "libX11-xcb" }
   - { state: "latest", name: "code" }
-

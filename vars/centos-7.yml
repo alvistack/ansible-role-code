@@ -31,4 +31,3 @@ _yum_repository:
 
 _yum:
   - { state: "latest", name: "code" }
-
