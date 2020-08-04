@@ -14,5 +14,30 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+_rpm_key:
+  - key: "https://packages.microsoft.com/keys/microsoft.asc"
+    fingerprint: "BC528686B50D79E339D3721CEB3E94ADBE1229CF"
+    state: "present"
+
+_yum_repository:
+  - file: "libX11-xcb"
+    name: "libX11-xcb"
+    description: "Code dependency"
+    baseurl: "http://mirror.centos.org/centos/8/AppStream/x86_64/os/Packages/libX11-xcb-1.6.8-3.el8.x86_64.rpm"
+    enabled: false 
+    gpgcheck: true
+    gpgkey: ""
+    state: "present"
+  - file: "code"
+    name: "code"
+    description: "CentOS 8 - x86_64 - Code"
+    baseurl: "https://packages.microsoft.com/yumrepos/vscode"
+    enabled: true
+    gpgcheck: true
+    gpgkey: "https://packages.microsoft.com/keys/microsoft.asc"
+    state: "present"
+
 _yum:
-  - { state: "latest", name: "firefox" }
+  - { state: "latest", name: "libX11-xcb" }
+  - { state: "latest", name: "code" }
+
