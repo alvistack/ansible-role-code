@@ -14,5 +14,34 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+<<<<<<< HEAD
 _yum:
   - { state: "latest", name: "firefox" }
+=======
+_rpm_key:
+  - key: "https://packages.microsoft.com/keys/microsoft.asc"
+    fingerprint: "BC528686B50D79E339D3721CEB3E94ADBE1229CF"
+    state: "present"
+
+_yum_repository:
+  - file: "libX11-xcb"
+    name: "libX11-xcb"
+    description: "Code dependency"
+    baseurl: "https://download-ib01.fedoraproject.org/pub/fedora/linux/releases/32/Everything/x86_64/os/Packages/l/libX11-xcb-1.6.9-3.fc32.x86_64.rpm"
+    enabled: true
+    gpgcheck: true
+    gpgkey: ""
+    state: "present"
+  - file: "code"
+    name: "code"
+    description: "Fedora 32 - x86_64 - Code"
+    baseurl: "https://packages.microsoft.com/yumrepos/vscode"
+    enabled: true
+    gpgcheck: true
+    gpgkey: "https://packages.microsoft.com/keys/microsoft.asc"
+    state: "present"
+
+_yum:
+  - { state: "latest", name: "libX11-xcb" }
+  - { state: "latest", name: "code" }
+>>>>>>> 3159dd4... RedHat - Code
