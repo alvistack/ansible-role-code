@@ -14,5 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+_rpm_key:
+  - key: "https://packages.microsoft.com/keys/microsoft.asc"
+    fingerprint: "BC528686B50D79E339D3721CEB3E94ADBE1229CF"
+    state: "present"
+
+_zypper_repository:
+  - name: "code"
+    repo: "https://packages.microsoft.com/yumrepos/vscode"
+    state: "present"
+
 _zypper:
-  - { state: "latest", name: "MozillaFirefox" }
+  - { state: "latest", name: "code" }
