@@ -18,7 +18,8 @@
   remote_user: root
   become: true
   tasks:
-    - name: code --version --user-data-dir $(mktemp -d)
-      command: code --version --user-data-dir $(mktemp -d)
+    - name: code --version
+      command: code --version
       register: result
-      changed_when: result is not succeeded
+      changed_when: false
+      failed_when: "'You are trying to start Visual Studio Code as a super user' not in result.stderr"
