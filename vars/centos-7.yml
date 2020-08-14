@@ -31,5 +31,5 @@ _yum_repository:
 
 _yum:
   - { state: "latest", name: "alsa-lib" }
-  - { state: "latest", name: "libX11-xcb" }
+  - { state: "latest", name: "libX11" }
   - { state: "latest", name: "code" }
