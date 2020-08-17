@@ -25,9 +25,9 @@ _yum_repository:
     description: "Visual Studio Code"
     baseurl: "https://packages.microsoft.com/yumrepos/vscode"
     enabled: true
+    priority: "2"
     gpgcheck: true
     gpgkey: "https://packages.microsoft.com/keys/microsoft.asc"
-    reposdir: "/etc/zypp/repos.d"
     state: "present"
 
 _zypper:
