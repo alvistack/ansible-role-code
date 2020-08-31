@@ -1,7 +1,7 @@
 # Ansible Role for Visual Studio Code
 
 [![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-code.svg)](https://travis-ci.com/alvistack/ansible-role-code)
-[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-code.svg)](https://github.com/alvistack/ansible-role-code)
+[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-code.svg)](https://github.com/alvistack/ansible-role-code/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-code.svg)](https://github.com/alvistack/ansible-role-code/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.code-blue.svg)](https://galaxy.ansible.com/alvistack/code)
 
