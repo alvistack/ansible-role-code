@@ -20,7 +20,7 @@
     state: "present"
   register: result
   until: result is succeeded
-  tags: teamviewer
+  tags: code
 
 - name: rpm --import
   rpm_key:
