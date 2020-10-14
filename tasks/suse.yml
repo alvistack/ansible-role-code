@@ -22,7 +22,6 @@
     state: "present"
   register: result
   until: result is succeeded
-  tags: code
 
 - name: rpm --import
   vars:
@@ -34,7 +33,6 @@
   loop: "{{ _rpm_key }}"
   register: result
   until: result is succeeded
-  tags: code
 
 - name: yum-config-manager --add-repo
   yum_repository:
@@ -49,7 +47,6 @@
     state: "{{ item.state }}"
     reposdir: "{{ item.reposdir | default('/etc/zypp/repos.d') }}"
   loop: "{{ _yum_repository }}"
-  tags: code
 
 - name: zypper install
   vars:
@@ -61,4 +58,3 @@
   loop: "{{ _zypper }}"
   register: result
   until: result is succeeded
-  tags: code
