@@ -14,32 +14,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-galaxy_info:
-  role_name: code
-  author: "Wong Hoi Sing Edison <hswong3i@pantarei-design.com>"
-  description: Ansible Role for Visual Studio Code Installation
-  company: PantaRei Design
-  license: Apache-2.0
-  min_ansible_version: "2.10"
-  platforms:
-    - name: Ubuntu
-      versions:
-        - groovy
-        - focal
-        - bionic
-    - name: EL
-      versions:
-        - "8"
-        - "7"
-    - name: opensuse
-      versions:
-        - "15.2"
-    - name: Debian
-      versions:
-        - buster
-    - name: Fedora
-      versions:
-        - "32"
-  galaxy_tags:
-    - system
-dependencies: []
+_apt_key:
+  - url: "https://packages.microsoft.com/keys/microsoft.asc"
+    id: "BC528686B50D79E339D3721CEB3E94ADBE1229CF"
+    state: "present"
+
+_apt_repository:
+  - repo: "deb [arch=amd64] http://packages.microsoft.com/repos/vscode stable main"
+    filename: "vscode"
+    state: "present"
+
+_apt:
+  - { state: "latest", name: "libasound2" }
+  - { state: "latest", name: "libx11-xcb1" }
+  - { state: "latest", name: "code" }
