@@ -19,7 +19,7 @@
   become: true
   tasks:
     - name: code --version
-      command: code --version
+      ansible.builtin.command: code --version
       register: result
       changed_when: false
       failed_when: "'You are trying to start Visual Studio Code as a super user' not in result.stderr"
