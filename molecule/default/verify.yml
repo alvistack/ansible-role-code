@@ -19,9 +19,8 @@
   remote_user: root
   become: true
   tasks:
-    - name: code --version
+    - name: flatpak info com.visualstudio.code
       ansible.builtin.command:
-        cmd: code --version
+        cmd: flatpak info com.visualstudio.code
       register: result
-      changed_when: false
-      failed_when: "'You are trying to start Visual Studio Code as a super user' not in result.stderr"
+      changed_when: result is not succeeded
