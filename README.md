@@ -1,13 +1,13 @@
-# Ansible Role for Visual Studio Code
+# Ansible Role for Visual Studio Code with Flatpak
 
 <a href="https://alvistack.com" title="AlviStack" target="_blank"><img src="/alvistack.svg" height="75" alt="AlviStack"></a>
 
-[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-code/master)](https://gitlab.com/alvistack/ansible-role-code/-/pipelines)
-[![GitHub tag](https://img.shields.io/github/tag/alvistack/ansible-role-code.svg)](https://github.com/alvistack/ansible-role-code/tags)
-[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-code.svg)](https://github.com/alvistack/ansible-role-code/blob/master/LICENSE)
-[![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.code-blue.svg)](https://galaxy.ansible.com/alvistack/code)
+[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-flatpak_code/master)](https://gitlab.com/alvistack/ansible-role-flatpak_code/-/pipelines)
+[![GitHub tag](https://img.shields.io/github/tag/alvistack/ansible-role-flatpak_code.svg)](https://github.com/alvistack/ansible-role-flatpak_code/tags)
+[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-flatpak_code.svg)](https://github.com/alvistack/ansible-role-flatpak_code/blob/master/LICENSE)
+[![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.flatpak_code-blue.svg)](https://galaxy.ansible.com/alvistack/flatpak_code)
 
-Ansible Role for Visual Studio Code Installation.
+Ansible Role for Visual Studio Code with Flatpak.
 
 ## Requirements
 

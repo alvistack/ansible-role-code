@@ -1,4 +1,4 @@
-# Ansible Role for Visual Studio Code
+# Ansible Role for Visual Studio Code with Flatpak
 
 ## 13.6.0 - TBC
 
